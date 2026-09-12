@@ -1,25 +1,44 @@
-<h1>My Task List</h1> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Task List</title>
+  
+  <!-- This loads your CSS styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- This container centers the app on the screen -->
+  <main class="container">
+    
+    <!-- Page title -->
+    <h1>My Task List</h1>
 
-<form id="task-form"> 
+    <!-- Form for adding a new task -->
+    <form id="task-form">
+      <label for="task-input">Task:</label>
+      <input id="task-input" type="text" placeholder="Enter a task">
 
-    <label for="task-input">Task:</label> 
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
 
-    <input id="task-input" type="text"> 
+      <button type="submit">Add Task</button>
+    </form>
 
-    <label for="priority">Priority:</label> 
+    <!-- This empty paragraph is where the JavaScript puts the error message -->
+    <p id="error-message" class="error"></p>
 
-    <select id="priority"> 
+    <!-- JavaScript puts the task cards inside this div -->
+    <div id="task-list"></div>
 
-        <option value="low">Low</option> 
+  </main>
 
-        <option value="medium">Medium</option> 
-
-        <option value="high">High</option> 
-
-    </select> 
-
-    <button type="submit">Add Task</button> 
-
-</form> 
-
-<div id="task-list"></div> 
+  <!-- This loads your JavaScript and makes the buttons work -->
+  <script src="script.js" defer></script>
+</body>
+</html>
