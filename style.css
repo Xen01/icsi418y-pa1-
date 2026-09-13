@@ -1,0 +1,114 @@
+/* Element selector: styles the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Element selector: centers the app and adds border/background */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Element selector: removes extra space above the heading */
+h1 {
+  margin-top: 0;
+}
+
+/* Element selector: makes the form stack its items neatly */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Element selector: styles text input and dropdown */
+input,
+select {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+/* Element selector: styles all buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* Class selector: red error text */
+.error {
+  color: red;
+  min-height: 1.2em;
+}
+
+/* Class selector: each task card */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #999;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+/* Class selector: completed tasks look different */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Class selector: task name takes up remaining space */
+.task-name {
+  flex: 1;
+}
+
+/* Class selector: priority label styling */
+.priority {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Priority border colors on the task card */
+.task.low {
+  border-left-color: #2ecc71;
+}
+.task.medium {
+  border-left-color: #f39c12;
+}
+.task.high {
+  border-left-color: #e74c3c;
+}
+
+/* Priority text colors */
+.priority.low {
+  color: #2ecc71;
+}
+.priority.medium {
+  color: #f39c12;
+}
+.priority.high {
+  color: #e74c3c;
+}
+
+/* Class selector: delete button uses a red color */
+.delete-btn {
+  background: #e74c3c;
+}
