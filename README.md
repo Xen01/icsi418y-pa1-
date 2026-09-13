@@ -17,3 +17,6 @@ and delete tasks.
 1. Download or clone this repository.
 2. Open `index.html` in a web browser or use the link.
 3. Add tasks using the form.
+
+## Known Problems
+- Tasks are not saved after the page is refreshed.
